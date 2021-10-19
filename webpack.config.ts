@@ -2,7 +2,7 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
-  entry: './src/index.tsx',
+  entry: './src/Router.tsx',
   output: { path: path.join(__dirname, 'build'), filename: 'index.bundle.js' },
   mode: process.env.NODE_ENV || 'development',
   resolve: {
@@ -39,7 +39,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'src', 'index.html'),
       //   favicon: './src/images/favicon-32x32.png',
-      favicon: '',
     }),
   ],
 };

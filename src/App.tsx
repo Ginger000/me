@@ -1,11 +1,13 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 import './App.scss';
+import { routes } from './router/config';
+import Router from './router/Router';
 
 function App() {
   return (
-    <div className="App">
-      <p>Me</p>
+    <div>
+      <Router routes={routes} />
     </div>
   );
 }

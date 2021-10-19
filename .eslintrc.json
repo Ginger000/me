@@ -30,10 +30,8 @@
         "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
         "no-use-before-define": "off",
         "no-console": 1,
-        "@typescript-eslint/indent": ["error", 2],
         "@typescript-eslint/no-unused-vars": "error",
         "@typescript-eslint/no-use-before-define": ["error"],
-        "@typescript-eslint/no-explicit-any": "error",
         "import/extensions": [
             "error",
             "ignorePackages",
