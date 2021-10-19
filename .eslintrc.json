@@ -45,6 +45,9 @@
         "jsx-a11y/label-has-associated-control": "off",
         "react/require-default-props" : "off",
         "no-mixed-operators": "off",
-        "global-require": "off"
+        "global-require": "off",
+        "import/no-extraneous-dependencies": ["error",  {"devDependencies": true}],
+        "react/jsx-props-no-spreading": "off",
+        "react/destructuring-assignment": [0, "always"]
     }
 }

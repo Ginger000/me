@@ -2,13 +2,13 @@ import path from 'path';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 module.exports = {
-  entry: './src/Router.tsx',
+  entry: './src/index.tsx',
   output: { path: path.join(__dirname, 'build'), filename: 'index.bundle.js' },
   mode: process.env.NODE_ENV || 'development',
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: ['.tsx', '.ts', '.js', '.jsx'],
   },
-  devServer: { static: path.join(__dirname, 'src'), port: 3000 },
+  devServer: { static: path.join(__dirname, 'src'), port: 3000, historyApiFallback: true },
   module: {
     rules: [
       {
