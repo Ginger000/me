@@ -3,20 +3,16 @@
 body{
   margin: 0;
   padding: 0;
+  font-size: $font-size;
 }
 
 .App {
   width: 100vw;
   min-height: 100vh;
-  padding: 40px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: $primary-dark-color;
-  font-family: $font-stack;
-  font-weight: 600;
+}
+
+h-full{
+  height: 100%;
 }
 
 .flex{
@@ -29,4 +25,20 @@ body{
 
 .items-center{
   align-items: center;
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
