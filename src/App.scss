@@ -1,7 +1,8 @@
 @import 'base';
 
 body{
-  background-color: $primary-bg;
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -18,3 +19,14 @@ body{
   font-weight: 600;
 }
 
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
