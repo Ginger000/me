@@ -8,23 +8,74 @@
   color: $font-color;
 
   &-container{
-    height: 80%;
+    height: 70%;
     width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+
+    &-user{
+      height: 65%;
+      padding: 20px;
+      &-avatar{
+        height: 80px;
+        width: 80px;
+        border: 3px white solid;
+        border-radius: 100px;
+        margin: 20px 0 80px;
+      }
+      @media (max-width: 860px) {
+        &-avatar{
+          height: 60px;
+          width: 60px;
+          margin: 40px 0 100px;
+        }
+      }
+    }
+
+    &-time{
+      left: 20px;
+      bottom: 0;
+      &-item{
+        background-color: transparent;
+        margin-bottom: 25px;
+        border: none;
+        outline: none;
+        font-family: $font-family;
+      }
+    }
+
+    &-pad{
+      height: 55%;
+      padding: 30px;
+      &-info{
+        margin-top: 20px;
+        &-main{
+          font-size: 4rem;
+        }
+        &-last{
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 860px) {
+    &-container{
+      height: 90%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      &-item{
+        height: 20%;
+      }
+      &-user{
+        display: flex;
+      }
+    }
+  }
+
+  &-rounded{
+    border-radius: 20px;
   }
 }
-
-.bg-blue{
-  background-color: hsl(246, 80%, 60%);
-}
-//- Blue: hsl(246, 80%, 60%)
-//
-//- Light red (work): hsl(15, 100%, 70%)
-//- Soft blue (play): hsl(195, 74%, 62%)
-//- Light red (study): hsl(348, 100%, 68%)
-//- Lime green (exercise): hsl(145, 58%, 55%)
-//- Violet (social): hsl(264, 64%, 52%)
-//- Soft orange (self care): hsl(43, 84%, 65%)
-//- Very dark blue: hsl(226, 43%, 10%)
-//- Dark blue: hsl(235, 46%, 20%)
-//- Desaturated blue: hsl(235, 45%, 61%)
-//- Pale Blue: hsl(236, 100%, 87%)

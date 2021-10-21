@@ -24,7 +24,7 @@
   }
 
   &-bg-social {
-    background-color: hsl(43, 84%, 65%)
+    background-color: hsl(264, 64%, 52%)
   }
 
   &-bg-self-care {
@@ -41,5 +41,17 @@
 
   &-bg-pale-blue {
     background-color: hsl(236, 100%, 87%)
+  }
+
+  &-text-pale-blue {
+    color: hsl(236, 100%, 87%)
+  }
+
+  &-text-desaturated-blue {
+    color: hsl(235, 45%, 61%)
+  }
+
+  &-text-white {
+    color: white
   }
 }
