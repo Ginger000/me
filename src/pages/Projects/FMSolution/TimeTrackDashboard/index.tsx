@@ -47,16 +47,19 @@ export default function TimeTrackDashboard() {
   const [timeTab, setTimeTab] = useState('Weekly');
 
   return (
-    <div className="f-db f-db-bg-dark-blue flex justify-center items-center">
+    <div className="f-db f-db-bg-very-dark-blue flex justify-center items-center">
       <div className="f-db-container grid grid-cols-4 gap-2">
         <div className="h-full">
-          <div>{User}</div>
+          <div className='f-db-bg-blue'>
+            <img src='./src/images/image-jeremy.png' alt="user"/>
+            Report for
+            {User}
+          </div>
           <div>
             {TimeTab.map((item) => <p>{item}</p>)}
-
           </div>
-
         </div>
+
         {data.map((item) => <div className="grid grid-rows-2 gap-2">{item.map((timeItem: time) => <div>{timeItem.title}</div>)}</div>)}
 
       </div>

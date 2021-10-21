@@ -1,5 +1,45 @@
-.f-db{
-  &-bg-dark-blue{
+.f-db {
+  &-bg-very-dark-blue {
     background-color: hsl(226, 43%, 10%);
+  }
+
+  &-bg-purple {
+    background-color: hsl(246, 80%, 60%);
+  }
+
+  &-bg-work {
+    background-color: hsl(15, 100%, 70%)
+  }
+
+  &-bg-play {
+    background-color: hsl(195, 74%, 62%)
+  }
+
+  &-bg-study {
+    background-color: hsl(348, 100%, 68%)
+  }
+
+  &-bg-exercise {
+    background-color: hsl(145, 58%, 55%)
+  }
+
+  &-bg-social {
+    background-color: hsl(43, 84%, 65%)
+  }
+
+  &-bg-self-care {
+    background-color: hsl(43, 84%, 65%);
+  }
+
+  &-bg-dark-blue{
+    background-color: hsl(235, 46%, 20%)
+  }
+
+  &-bg-desaturated-blue {
+    background-color: hsl(235, 45%, 61%)
+  }
+
+  &-bg-pale-blue {
+    background-color: hsl(236, 100%, 87%)
   }
 }
