@@ -67,8 +67,10 @@ export default function TimeTrackDashboard() {
         <div className="h-full relative f-db-container-item">
           <div className="f-db-bg-purple f-db-rounded f-db-container-user absolute top-0 left-0 right-0 z-1">
             <img className="f-db-container-user-avatar" src="../../../../images/image-jeremy.png" alt="user" />
-            <p className="font-light text-xs f-db-text-pale-blue">Report for</p>
-            <p className="font-light f-db-container-user-name">{User}</p>
+            <div className="f-db-container-user-pad">
+              <p className="font-light text-xs f-db-text-pale-blue">Report for</p>
+              <p className="font-light f-db-container-user-name">{User}</p>
+            </div>
           </div>
           <div className="h-full f-db-bg-dark-blue f-db-rounded relative f-db-container-item">
             <div className="absolute f-db-container-time flex flex-col">
