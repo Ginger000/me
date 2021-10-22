@@ -62,9 +62,9 @@ export default function TimeTrackDashboard() {
 
   return (
 
-    <div className="f-db f-db-bg-very-dark-blue flex justify-center items-center">
+    <div className="f-db f-db-bg-very-dark-blue">
       <div className="f-db-container">
-        <div className="h-full relative f-db-container-item">
+        <div className="relative f-db-container-item">
           <div className="f-db-bg-purple f-db-rounded f-db-container-user absolute top-0 left-0 right-0 z-1">
             <img className="f-db-container-user-avatar" src="../../../../images/image-jeremy.png" alt="user" />
             <div className="f-db-container-user-pad">
@@ -72,13 +72,13 @@ export default function TimeTrackDashboard() {
               <p className="font-light f-db-container-user-name">{User}</p>
             </div>
           </div>
-          <div className="h-full f-db-bg-dark-blue f-db-rounded relative f-db-container-item">
-            <div className="absolute f-db-container-time flex flex-col">
+          <div className="h-full f-db-bg-dark-blue f-db-rounded relative f-db-container-time-pad">
+            <div className="absolute f-db-container-time-pad-info flex ">
               {TimeTab.map((item) => (
                 <button
                   type="button"
                   onClick={() => setTimeTab(item)}
-                  className={`font-light f-db-container-time-item pointer-cursor flex text-base ${item === timeTab ? 'f-db-text-white' : 'f-db-text-desaturated-blue'}`}
+                  className={`font-light f-db-container-time-pad-info-item pointer-cursor flex text-base ${item === timeTab ? 'f-db-text-white' : 'f-db-text-desaturated-blue'}`}
                 >
                   {item}
                 </button>
@@ -87,9 +87,9 @@ export default function TimeTrackDashboard() {
           </div>
         </div>
         {data.map((item) => (
-          <div className="grid grid-rows-2 gap-4">
+          <div className="f-db-container-projects">
             {item.map((timeItem: time) => (
-              <div className={`f-db-bg-${timeItem.name} f-db-rounded relative`}>
+              <div className={`f-db-bg-${timeItem.name} f-db-rounded relative f-db-container-projects-item`}>
                 <div className="relative">
                   <img className="absolute top-0 right-0" src={timeItem.image} alt={timeItem.name} />
                 </div>
@@ -102,15 +102,12 @@ export default function TimeTrackDashboard() {
                     <p className="font-light f-db-container-pad-info-main">{`${timeItem.duration}hrs`}</p>
                     <p className="font-light f-db-text-desaturated-blue text-base f-db-container-pad-info-last">{`Last Week - ${timeItem.lastDuration}hrs`}</p>
                   </div>
-
                 </div>
               </div>
             ))}
           </div>
         ))}
-
       </div>
-
     </div>
   );
 }

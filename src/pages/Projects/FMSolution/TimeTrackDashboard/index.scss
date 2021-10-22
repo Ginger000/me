@@ -1,45 +1,45 @@
 @import 'base';
 
-.f-db{
+.f-db {
   height: 100vh;
   width: 100vw;
   font-family: $font-family;
   font-size: $font-size;
   color: $font-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  &-container{
+  &-container {
     height: 70%;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 2rem;
 
-    &-user{
+    &-user {
       height: 65%;
       padding: 20px;
-      &-avatar{
+
+      &-avatar {
         height: 80px;
         width: 80px;
         border: 3px white solid;
         border-radius: 100px;
         margin: 20px 0 80px;
       }
-      @media (max-width: 860px) {
-        &-avatar{
-          height: 60px;
-          width: 60px;
-          margin: 40px 0 100px;
-        }
-      }
-      &-name{
+
+      &-name {
         font-size: 2.5rem;
       }
     }
 
-    &-time{
+    &-time-pad-info {
+      flex-direction: column;
       left: 20px;
       bottom: 0;
-      &-item{
+
+      &-item {
         background-color: transparent;
         margin-bottom: 22px;
         border: none;
@@ -48,61 +48,122 @@
       }
     }
 
-    &-pad{
-      height: 55%;
-      padding: 30px;
-      &-info{
-        margin-top: 20px;
-        &-main{
+    &-projects {
+      display: grid;
+      grid-template-rows: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    &-pad {
+      height: 65%;
+      padding: 22px;
+
+      &-info {
+        margin-top: 30px;
+
+        &-main {
           font-size: 4rem;
         }
-        &-last{
+
+        &-last {
           margin-top: 4px;
         }
       }
     }
   }
 
-  @media (max-width: 860px) {
-    &-container{
-      height: 90%;
+  &-rounded {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .f-db {
+    height: 1280px;
+    align-items: start;
+
+    &-container {
+      height: 150px;
       width: 80%;
       display: flex;
       flex-direction: column;
-      &-item{
-        height: 20%;
+
+      &-item {
+        height: 140px;
+        margin-top: 30px;
+        margin-bottom: 16px;
       }
-      &-user{
+
+      &-user {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &-avatar{
+
+        &-avatar {
           height: 60px;
           width: 60px;
           margin: 0;
         }
-        &-pad{
+
+        &-pad {
           margin-left: 20px;
         }
-        &-name{
+
+        &-name {
           font-size: 1.5rem;
         }
       }
 
-      &-time{
+      &-time-pad {
+        height: 170px;
+        width: 100%;
         display: flex;
-        bottom: 0;
+        justify-content: center;
+        align-items: center;
+
+        &-info {
+          width: 100%;
+          flex-direction: row;
+          justify-content: center;
+          bottom: 10px;
+          left: 0;
+
+          &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            margin: 0;
+            flex: 1;
+          }
+        }
       }
 
-      &-pad{
-        height: 20%;
+      &-projects {
+        display: flex;
+        flex-direction: column;
+
+        &-item {
+          height: 140px;
+          margin-bottom: 0;
+        }
+      }
+
+      &-pad {
+        height: 40%;
         padding: 30px;
-        &-info{
-          margin-top: 20px;
-          &-main{
-            font-size: 2rem;
+
+        &-info {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          &-main {
+            font-size: 1.75rem;
           }
-          &-last{
+
+          &-last {
             margin-top: 4px;
           }
         }
@@ -110,7 +171,5 @@
     }
   }
 
-  &-rounded{
-    border-radius: 20px;
-  }
+
 }
