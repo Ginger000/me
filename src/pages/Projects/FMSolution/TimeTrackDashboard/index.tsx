@@ -7,7 +7,7 @@ type time = {
   title: string
   duration: number
   lastDuration: number
-  image: string
+  image: any
 }
 
 const User = 'Jeremy Robson';
@@ -18,42 +18,42 @@ const data : time[][] = [
     title: 'Work',
     duration: 32,
     lastDuration: 36,
-    image: '../../../../images/icon-work.svg',
+    image: require('../../../../images/icon-work.svg'),
   },
   {
     name: 'exercise',
     title: 'Exercise',
     duration: 4,
     lastDuration: 5,
-    image: '../../../../images/icon-exercise.svg',
+    image: require('../../../../images/icon-exercise.svg'),
   }],
   [{
     name: 'play',
     title: 'Play',
     duration: 10,
     lastDuration: 8,
-    image: '../../../../images/icon-play.svg',
+    image: require('../../../../images/icon-play.svg'),
   },
   {
     name: 'social',
     title: 'Social',
     duration: 5,
     lastDuration: 10,
-    image: '../../../../images/icon-social.svg',
+    image: require('../../../../images/icon-social.svg'),
   }],
   [{
     name: 'study',
     title: 'Study',
     duration: 4,
     lastDuration: 7,
-    image: '../../../../images/icon-study.svg',
+    image: require('../../../../images/icon-study.svg'),
   },
   {
     name: 'self-care',
     title: 'Self Care',
     duration: 2,
     lastDuration: 2,
-    image: '../../../../images/icon-self-care.svg',
+    image: require('../../../../images/icon-self-care.svg'),
   }],
 ];
 

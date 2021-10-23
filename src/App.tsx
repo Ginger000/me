@@ -17,7 +17,7 @@ function App() {
         <hr />
 
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={TimeTrackDashboard} />
+        <Route path="/time-tracking-dashboard" component={TimeTrackDashboard} />
       </div>
     </HashRouter>
   );
