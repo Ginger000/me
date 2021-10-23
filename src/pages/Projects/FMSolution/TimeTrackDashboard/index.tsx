@@ -76,6 +76,7 @@ export default function TimeTrackDashboard() {
             <div className="absolute f-db-container-time-pad-info flex ">
               {TimeTab.map((item) => (
                 <button
+                  key={item}
                   type="button"
                   onClick={() => setTimeTab(item)}
                   className={`font-light f-db-container-time-pad-info-item pointer-cursor flex text-base ${item === timeTab ? 'f-db-text-white' : 'f-db-text-desaturated-blue'}`}
@@ -89,7 +90,7 @@ export default function TimeTrackDashboard() {
         {data.map((item) => (
           <div className="f-db-container-projects">
             {item.map((timeItem: time) => (
-              <div className={`f-db-bg-${timeItem.name} f-db-rounded relative f-db-container-projects-item`}>
+              <div key={timeItem.name} className={`f-db-bg-${timeItem.name} f-db-rounded relative f-db-container-projects-item`}>
                 <div className="relative">
                   <img className="absolute top-0 right-0" src={timeItem.image} alt={timeItem.name} />
                 </div>
