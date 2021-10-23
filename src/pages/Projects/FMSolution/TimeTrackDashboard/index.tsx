@@ -66,7 +66,7 @@ export default function TimeTrackDashboard() {
       <div className="f-db-container">
         <div className="relative f-db-container-item">
           <div className="f-db-bg-purple f-db-rounded f-db-container-user absolute top-0 left-0 right-0 z-1">
-            <img className="f-db-container-user-avatar" src="../../../../images/image-jeremy.png" alt="user" />
+            <img className="f-db-container-user-avatar" src={require('../../../../images/image-jeremy.png')} alt="user" />
             <div className="f-db-container-user-pad">
               <p className="font-light text-xs f-db-text-pale-blue">Report for</p>
               <p className="font-light f-db-container-user-name">{User}</p>
@@ -96,7 +96,7 @@ export default function TimeTrackDashboard() {
                 <div className="f-db-bg-dark-blue absolute bottom-0 left-0 right-0 f-db-rounded f-db-container-pad">
                   <div className="flex justify-between items-center">
                     <p>{timeItem.title}</p>
-                    <img className="pointer-cursor" src="../../../../images/icon-ellipsis.svg" alt="ellipsis" />
+                    <img className="pointer-cursor" src={require('../../../../images/icon-ellipsis.svg')} alt="ellipsis" />
                   </div>
                   <div className="f-db-container-pad-info">
                     <p className="font-light f-db-container-pad-info-main">{`${timeItem.duration}hrs`}</p>
