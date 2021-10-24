@@ -18,42 +18,42 @@ const data : time[][] = [
     title: 'Work',
     duration: 32,
     lastDuration: 36,
-    image: require('../../../../images/icon-work.svg'),
+    image: require('../../../../images/time-tracking-board/icon-work.svg'),
   },
   {
     name: 'exercise',
     title: 'Exercise',
     duration: 4,
     lastDuration: 5,
-    image: require('../../../../images/icon-exercise.svg'),
+    image: require('../../../../images/time-tracking-board/icon-exercise.svg'),
   }],
   [{
     name: 'play',
     title: 'Play',
     duration: 10,
     lastDuration: 8,
-    image: require('../../../../images/icon-play.svg'),
+    image: require('../../../../images/time-tracking-board/icon-play.svg'),
   },
   {
     name: 'social',
     title: 'Social',
     duration: 5,
     lastDuration: 10,
-    image: require('../../../../images/icon-social.svg'),
+    image: require('../../../../images/time-tracking-board/icon-social.svg'),
   }],
   [{
     name: 'study',
     title: 'Study',
     duration: 4,
     lastDuration: 7,
-    image: require('../../../../images/icon-study.svg'),
+    image: require('../../../../images/time-tracking-board/icon-study.svg'),
   },
   {
     name: 'self-care',
     title: 'Self Care',
     duration: 2,
     lastDuration: 2,
-    image: require('../../../../images/icon-self-care.svg'),
+    image: require('../../../../images/time-tracking-board/icon-self-care.svg'),
   }],
 ];
 
@@ -66,7 +66,7 @@ export default function TimeTrackDashboard() {
       <div className="f-db-container">
         <div className="relative f-db-container-item">
           <div className="f-db-bg-purple f-db-rounded f-db-container-user absolute top-0 left-0 right-0 z-1">
-            <img className="f-db-container-user-avatar" src={require('../../../../images/image-jeremy.png').default} alt="user" />
+            <img className="f-db-container-user-avatar" src={require('../../../../images/time-tracking-board/image-jeremy.png').default} alt="user" />
             <div className="f-db-container-user-pad">
               <p className="font-light text-xs f-db-text-pale-blue">Report for</p>
               <p className="font-light f-db-container-user-name">{User}</p>
@@ -97,7 +97,7 @@ export default function TimeTrackDashboard() {
                 <div className="f-db-bg-dark-blue absolute bottom-0 left-0 right-0 f-db-rounded f-db-container-pad">
                   <div className="flex justify-between items-center">
                     <p>{timeItem.title}</p>
-                    <img className="pointer-cursor" src={require('../../../../images/icon-ellipsis.svg')} alt="ellipsis" />
+                    <img className="pointer-cursor" src={require('../../../../images/time-tracking-board/icon-ellipsis.svg')} alt="ellipsis" />
                   </div>
                   <div className="f-db-container-pad-info">
                     <p className="font-light f-db-container-pad-info-main">{`${timeItem.duration}hrs`}</p>
